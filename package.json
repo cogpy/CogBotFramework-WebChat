@@ -49,7 +49,8 @@
     "./packages/bundle",
     "./packages/test/page-object",
     "./packages/debug-theme",
-    "./packages/fluent-theme"
+    "./packages/fluent-theme",
+    "./packages/opencog-orchestrator"
   ],
   "scripts": {
     "audit-all": "find -name package-lock.json | xargs dirname | xargs -I {} sh -c 'cd {} && npm audit'",
