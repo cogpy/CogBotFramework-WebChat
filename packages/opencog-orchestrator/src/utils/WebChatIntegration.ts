@@ -28,7 +28,7 @@ export function convertWebChatActivity(activity: any): BotActivity {
  * Generate a unique activity ID
  */
 function generateActivityId(): string {
-  return `activity_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  return `activity_${Date.now()}_${Date.now().toString(36)}`;
 }
 
 /**

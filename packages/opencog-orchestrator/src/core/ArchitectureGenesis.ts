@@ -341,7 +341,7 @@ export class ArchitectureGenesisEngine {
    */
   private addEvolutionaryCognitiveNode(mutation: Mutation): void {
     const evolutionaryNode: CognitiveNode = {
-      id: `evolution_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      id: `evolution_${Date.now()}_${(Date.now() + Math.floor(performance.now())).toString(36)}`,
       type: 'concept',
       name: `EvolutionaryNode_${mutation.type}`,
       truthValue: { 
