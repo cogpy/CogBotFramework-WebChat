@@ -1,0 +1,8 @@
+extends:
+  - '../../../.eslintrc.yml'
+
+env:
+  node: true
+
+parserOptions:
+  project: './src/tsconfig.json'
